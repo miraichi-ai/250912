@@ -4,111 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>自分だけの世界観を作る！画像生成AIの使い方 - まとめ図解リンク集</title>
-    
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Zen+Kaku+Gothic+New:wght@700;900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Noto Sans JP', sans-serif;
-            background-color: #0c0a17;
-            background-image: 
-                radial-gradient(at 0% 100%, hsla(253, 58%, 34%, 0.3) 0px, transparent 50%),
-                radial-gradient(at 90% 10%, hsla(303, 58%, 40%, 0.35) 0px, transparent 50%);
-            color: #d1d1d1;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            color: #e2e8f0;
         }
-        h1, h2, h3, .card-title {
-            font-family: 'Zen Kaku Gothic New', sans-serif;
-        }
-        .text-glow {
-            text-shadow:
-                0 0 5px hsla(303, 100%, 80%, 0.7),
-                0 0 10px hsla(303, 100%, 80%, 0.5);
+        .font-title {
+            /* メイリオを優先し、なければ他のゴシック体で表示 */
+            font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic', sans-serif;
         }
         .card {
-            background: rgba(22, 19, 44, 0.4);
+            background-color: rgba(30, 41, 59, 0.8);
             backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(217, 70, 239, 0.2);
-            box-shadow: 0 0 15px rgba(217, 70, 239, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            border: 1px solid rgba(51, 65, 85, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .card:hover {
-            transform: translateY(-10px) scale(1.02);
-            border-color: rgba(217, 70, 239, 0.6);
-            box-shadow: 0 0 35px rgba(217, 70, 239, 0.3), 0 15px 30px -10px rgba(0,0,0,0.5);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body class="antialiased">
-
-    <div class="container mx-auto px-6 py-12 md:py-20">
+    <div class="container mx-auto px-4 py-8 md:py-16">
         
-        <header class="text-center mb-12 md:mb-16">
-            <h1 class="text-4xl md:text-5xl font-black text-white mb-4 tracking-wider text-glow">自分だけの世界観を作る！画像生成AIの使い方</h1>
-            <p class="text-lg text-cyan-300 font-bold">（2025年9月12日） 🔸 まとめ図解リンク集</p>
-            <p class="text-xs text-gray-500 mt-4 max-w-2xl mx-auto">※文字起こしデータを元に作成しているため、誤字脱字や情報の誤りなども含まれている可能性があります。予めご了承ください。</p>
+        <header class="text-center mb-12">
+            <h1 class="font-title text-3xl md:text-5xl font-bold text-white mb-4">自分だけの世界観を作る！画像生成AIの使い方</h1>
+            <p class="text-slate-400 text-lg">（2025年9月12日） 🔸 まとめ図解リンク集</p>
+            <p class="text-slate-500 text-xs mt-2">※文字起こしデータを元に作成しているため、誤字脱字や情報の誤りなども含まれている可能性があります。予めご了承ください。</p>
         </header>
 
-        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-10">
-            
-            <!-- Card 1 -->
-            <a href="ai_art_seminar_overview.html" class="card block rounded-xl overflow-hidden group">
-                <div class="p-6 md:p-8">
-                    <h2 class="card-title text-2xl font-bold text-fuchsia-400 mb-3 group-hover:text-fuchsia-300 transition-colors duration-300">第1話：創造革命への招待状</h2>
-                    <p class="text-gray-300 leading-relaxed">AI時代の新たな表現とは何か。セミナー全体の目的や参加者の声を通じて、あなたの創造プロセスに革命を起こすための視点を提供します。</p>
-                </div>
-                <div class="bg-black/20 px-6 py-3 text-right border-t border-fuchsia-500/20">
-                    <span class="text-sm font-semibold text-cyan-400 group-hover:text-white transition-colors duration-300">全体像・導入編 →</span>
-                </div>
-            </a>
+        <main>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Card 1 -->
+                <a href="1-seminar-overview.html" class="card block rounded-2xl p-8 group">
+                    <h2 class="font-zen text-2xl font-bold text-white mb-3">第1話：セミナーの全体像と参加者の声</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        まずはここから。このセミナーで何が得られるのか、参加者はどんな感動を体験したのかをご紹介。あなたの創造の旅を始めるための羅針盤です。
+                    </p>
+                </a>
 
-            <!-- Card 2 -->
-            <a href="design_art_analysis%20(9).html" class="card block rounded-xl overflow-hidden group">
-                <div class="p-6 md:p-8">
-                    <h2 class="card-title text-2xl font-bold text-fuchsia-400 mb-3 group-hover:text-fuchsia-300 transition-colors duration-300">第2話：表現の核を見つける</h2>
-                    <p class="text-gray-300 leading-relaxed">デザインとアートの本質的な違いを理解し、作品に深みを与える「原体験」を基にした世界観の作り方を学びます。</p>
-                </div>
-                <div class="bg-black/20 px-6 py-3 text-right border-t border-fuchsia-500/20">
-                    <span class="text-sm font-semibold text-cyan-400 group-hover:text-white transition-colors duration-300">基本概念編 →</span>
-                </div>
-            </a>
+                <!-- Card 2 -->
+                <a href="2-design-vs-art-basics.html" class="card block rounded-2xl p-8 group">
+                    <h2 class="font-zen text-2xl font-bold text-white mb-3">第2話：デザインとアート、その本質的な違い</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        すべての表現はここから始まります。「課題解決のデザイン」と「自己表現のアート」。この違いを理解することが、あなた独自の世界観を築くための第一歩です。
+                    </p>
+                </a>
 
-            <!-- Card 3 -->
-            <a href="design_art_analysis%20(8).html" class="card block rounded-xl overflow-hidden group">
-                <div class="p-6 md:p-8">
-                    <h2 class="card-title text-2xl font-bold text-fuchsia-400 mb-3 group-hover:text-fuchsia-300 transition-colors duration-300">第3話：組み合わせの実践的アプローチ</h2>
-                    <p class="text-gray-300 leading-relaxed">AIの力を借りて、身近なものや地域の資源から新しい表現を生み出す「組み合わせ」思考の具体的なステップと成功事例を解説します。</p>
-                </div>
-                <div class="bg-black/20 px-6 py-3 text-right border-t border-fuchsia-500/20">
-                    <span class="text-sm font-semibold text-cyan-400 group-hover:text-white transition-colors duration-300">実践的アプローチ編 →</span>
-                </div>
-            </a>
+                <!-- Card 3 -->
+                <a href="3-worldview-by-combination.html" class="card block rounded-2xl p-8 group">
+                    <h2 class="font-zen text-2xl font-bold text-white mb-3">第3話：「組み合わせ」で見つける新しい表現</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        日常に溢れる要素を掛け合わせ、誰も見たことのない世界を創造する。AI時代だからこそ可能な、無限の組み合わせからオリジナリティを生み出す方法を解説します。
+                    </p>
+                </a>
 
-            <!-- Card 4 -->
-            <a href="design_art_analysis%20(7).html" class="card block rounded-xl overflow-hidden group">
-                <div class="p-6 md:p-8">
-                    <h2 class="card-title text-2xl font-bold text-fuchsia-400 mb-3 group-hover:text-fuchsia-300 transition-colors duration-300">第4話：伝統と革新の融合</h2>
-                    <p class="text-gray-300 leading-relaxed">日本の伝統工芸と西洋芸術など、異分野の要素を融合させる高度な事例を分析。プロンプトの微調整で世界観を劇的に変える技術に迫ります。</p>
-                </div>
-                <div class="bg-black/20 px-6 py-3 text-right border-t border-fuchsia-500/20">
-                    <span class="text-sm font-semibold text-cyan-400 group-hover:text-white transition-colors duration-300">詳細事例・分析編 →</span>
-                </div>
-            </a>
+                <!-- Card 4 -->
+                <a href="4-advanced-prompt-technique.html" class="card block rounded-2xl p-8 group">
+                    <h2 class="font-zen text-2xl font-bold text-white mb-3">第4話：伝統工芸 × 西洋芸術？プロンプト調整の威力</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        たった2つの要素変更が世界を劇的に変える。日本の伝統工芸と西洋芸術を融合させる事例から、AIとの対話を深化させるプロンプトの微調整術を学びます。
+                    </p>
+                </a>
 
+                <!-- Card 5 -->
+                <a href="5-summary-and-self-expression.html" class="card block rounded-2xl p-8 group">
+                    <h2 class="font-zen text-2xl font-bold text-white mb-3">第5話：唯一無二の作品へ。原体験から表現を生む</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        あなたの人生そのものが、最高の創作の源泉です。自分だけの「原体験」を掘り起こし、誰にも真似できない、記憶に残る作品を生み出すための最終章。
+                    </p>
+                </a>
+
+            </div>
         </main>
 
-        <footer class="text-center mt-16 md:mt-20">
-            <p class="text-sm text-gray-600">&copy; 2025 MIRAICHI. All Rights Reserved.</p>
+        <footer class="text-center mt-16">
+            <p class="text-slate-500 text-sm">&copy; 2025 MIRAICHI. All Rights Reserved.</p>
         </footer>
 
     </div>
-
 </body>
 </html>
 
